@@ -1,5 +1,5 @@
 (function () {
-    emailjs.init("_UyOqmTeKtOOhkkgI") // Replace with your EmailJS Public Key
+    emailjs.init("API_KEY") // Replace with your EmailJS Public Key
 })();
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
@@ -7,7 +7,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     const loadingModal = new bootstrap.Modal(document.getElementById('loadingDialog'));
     loadingModal.show();
 
-    emailjs.sendForm("service_6oc4nee", "template_98ebzli", this)
+    emailjs.sendForm("SERVICE_KEY", "TEMPLATE_ID", this)
         .then(() => {
             loadingModal.hide();
             alert('Message sent successfully!');
