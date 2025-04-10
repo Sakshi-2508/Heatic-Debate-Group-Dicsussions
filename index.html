@@ -1,0 +1,154 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+
+    <meta property="og:title" content="Heatic Debate">
+    <meta property="og:description" content="Debate on the most constroversial topics now">
+    <meta property="og:image" content="https://informativeheatic.web.app/assets/images/heatic_website_header_banner.png">
+    <!-- URL to your logo/banner image -->
+    <meta property="og:url" content="https://play.google.com/store/apps/details?id=com.asm.heatic">
+    <!-- URL of the shared page -->
+
+    <title>Heatic Debate App</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./assets/images/heatic_logo.png" alt="Heatic Debate Logo" width="40" height="40" class="me-2">
+                Heatic Debate
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link"
+                            href="./pages/heatic_debate_app_privacy_policy.html">Privacy Policy</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="./pages/heatic_debate_app_terms_and_conditions.html">Terms & Conditions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/child_safety_policy.html">Child Safety</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <h1>Join the Ultimate Debate Platform</h1>
+            <p>Engage in thought-provoking discussions on trending topics.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.asm.heatic" class="btn btn-light btn-lg">Download
+                Heatic</a>
+        </div>
+    </header>
+
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Features</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card" style="background-image: url('./assets/images/multiple_topics.png');">
+                        <h4>Multiple Topics</h4>
+                        <p>Debate on various topics ranging from politics to entertainment.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card" style="background-image: url('./assets/images/live_podcast.png');">
+                        <h4>Live Podcast</h4>
+                        <p>Join live discussions with experts and passionate debaters.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card" style="background-image: url('./assets/images/community_driven.png');">
+                        <h4>Community Driven</h4>
+                        <p>Engage with like-minded individuals and grow your knowledge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Debate Section -->
+    <section id="live-debate" class="live-debate-section">
+        <video autoplay loop muted>
+            <source src="./assets/videos/live_debate.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <h2>Live Debates</h2>
+            <p>Join our live debates and share your views on trending topics.</p>
+            <a href="https://www.youtube.com/@heaticdebate" target="_blank" class="btn btn-light mt-3">
+                Visit Our YouTube Channel
+            </a>
+        </div>
+    </section>
+    <!-- <a href="#" class="btn btn-primary">Join Now</a> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-center">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions? Get in touch with us.</p>
+            <form class="contact-form" id="contactForm">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Your Name" name="from_name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Your Email" name="from_email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Your Message" name="message"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Material-style Loading Dialog -->
+    <div id="loadingDialog" class="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content d-flex justify-content-center align-items-center p-4">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <span class="fs-5">Please wait...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Heatic Debate. All Rights Reserved.</p>
+        <p>Website is developed and made by <a href="https://github.com/Sakshi-2508" target="_blank"
+                class="text-white text-decoration-underline">Sakshi</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

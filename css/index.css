@@ -1,0 +1,87 @@
+/* index.css */
+.hero-section {
+     background: url('../assets/images/homePage_banner.jpg') no-repeat center center/cover;
+     color: white;
+     text-align: center;
+     padding: 100px 0;
+     position: relative;
+
+ }
+
+ .hero-section::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     /* Black overlay effect */
+ }
+
+ .hero-section .container {
+     position: relative;
+     z-index: 1;
+ }
+
+ .feature-card {
+     color: white;
+     text-align: center;
+     padding: 50px 20px;
+     border-radius: 10px;
+     background-size: cover;
+     background-position: center;
+     height: 250px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     position: relative;
+ }
+
+ .feature-card::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     /* Black overlay effect */
+     border-radius: 10px;
+ }
+
+ .feature-card h4,
+ .feature-card p {
+     position: relative;
+     z-index: 1;
+ }
+
+ .live-debate-section {
+     position: relative;
+     color: white;
+     text-align: center;
+     padding: 100px 0;
+     overflow: hidden;
+ }
+
+ .live-debate-section video {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     z-index: -1;
+ }
+
+ .live-debate-section .container {
+     position: relative;
+     z-index: 1;
+ }
+
+ .contact-form {
+     padding: 50px;
+     background: #f8f9fa;
+     border-radius: 10px;
+     border-color: black;
+ }
