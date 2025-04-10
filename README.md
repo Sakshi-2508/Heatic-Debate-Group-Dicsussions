@@ -24,9 +24,7 @@ Experience Heatic on the go:
 
 ## 📸 Preview
 
-| Hero Section | Features | Live Debate Section |
-|--------------|----------|---------------------|
-| ![Hero](./assets/images/heatic_logo.png) | ![Feature](./assets/images/multiple_topics.png) | ![Live](./assets/images/live_podcast.png) |
+![Screenshot](./assets/images/website_ss.png)
 
 ---
 
